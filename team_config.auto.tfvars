@@ -3,6 +3,17 @@ team_configs = {
     secret_ready = true
     user_dsid_list = []
     tasks = {
+      lh_saptc1 = {
+        sourcepath = "/prd/internal/minerva_migration_cit/prd_internal_minerva_migration_cit.db/prd_internal_tc1/"
+        targetpath = "/prd-lh1-agtr-src/raw/cdp/prd/src/sap_tc1/lh_cdp_sap_tc1_raw_prd.db/"
+        taskenabled = true
+        include_paths = [
+          "/acdoca/"
+          "/ceicarg/"
+          "/cskt/"
+          "/eket/"
+        ]
+      }
       lh_saptca = {
         sourcepath = "/prd/internal/minerva_migration_cit/prd_internal_minerva_migration_cit.db/prd_internal_tca/"
         targetpath = "/prd-lh1-agtr-src/raw/cdp/prd/src/sap_tca/lh_cdp_sap_tca_raw_prd.db/"
